@@ -2,8 +2,22 @@
 
 using namespace std;
 
-int main() {
-	cout << "Hello, World!";
+int fib(int n) {
+    if (n <= 1) {
+        return n;
+    }
+    else {
+        return fib(n - 1) + fib(n - 2);
+    }
+}
 
-	return 0;
+
+int main() {
+    cout << "Hello, World!" << endl;
+
+    int n;
+    cin >> n;
+    fib(n);
+
+    return 0;
 }
